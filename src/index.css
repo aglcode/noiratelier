@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+@import "tailwindcss";
+
+:root {
+    --color-dark: #222831;
+    --color-light: #E1E1E1;
+}
+
+body, p, .sub-heading {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .heading {
+    font-family: 'Red Hat Display', sans-serif;
+}
