@@ -2,6 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import bag from '../assets/bag.png';
 import manbag from '../assets/manbag.png';
+import { Lens } from './ui/lens';
 
 const CaseStudy = () => {
   return (
@@ -21,28 +22,32 @@ const CaseStudy = () => {
                animate={{ opacity: 1, y: 0 }}
                transition={{ delay: 0.4, duration: 0.8, ease: 'easeOut' }}
              >
-               <motion.img 
-                 src={bag} 
-                 alt="Bag" 
-                 className="w-full max-w-xs sm:max-w-md h-auto rounded-xl object-cover"
-                 initial={{ opacity: 0, scale: 0.95 }}
-                 animate={{ opacity: 1, scale: 1 }}
-                 transition={{ delay: 0.6, duration: 0.8, ease: 'easeOut' }}
-               />
+               <Lens>
+                 <motion.img 
+                   src={bag} 
+                   alt="Bag" 
+                   className="w-[350px] h-[450px] rounded-xl object-cover"
+                   initial={{ opacity: 0, scale: 0.95 }}
+                   animate={{ opacity: 1, scale: 1 }}
+                   transition={{ delay: 0.6, duration: 0.8, ease: 'easeOut' }}
+                 />
+               </Lens>
              </motion.div>
              <motion.div className="flex-1 flex justify-center"
                initial={{ opacity: 0, y: 40 }}
                animate={{ opacity: 1, y: 0 }}
                transition={{ delay: 0.6, duration: 0.8, ease: 'easeOut' }}
              >
-               <motion.img 
-                 src={manbag} 
-                 alt="Man Bag" 
-                 className="w-full max-w-xs sm:max-w-md h-auto rounded-xl object-cover"
-                 initial={{ opacity: 0, scale: 0.95 }}
-                 animate={{ opacity: 1, scale: 1 }}
-                 transition={{ delay: 0.8, duration: 0.8, ease: 'easeOut' }}
-               />
+               <Lens>
+                 <motion.img 
+                   src={manbag} 
+                   alt="Man Bag" 
+                   className="w-[350px] h-[450px] rounded-xl object-cover"
+                   initial={{ opacity: 0, scale: 0.95 }}
+                   animate={{ opacity: 1, scale: 1 }}
+                   transition={{ delay: 0.8, duration: 0.8, ease: 'easeOut' }}
+                 />
+               </Lens>
              </motion.div>
            </motion.div>
            <motion.p className="sub-heading text-center m-0"
