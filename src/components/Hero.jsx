@@ -58,8 +58,8 @@ const Hero = () => {
         transition={{ delay: 1, duration: 0.8, ease: 'easeOut' }}
         />
         <div className="absolute inset-0 bg-black opacity-40 pointer-events-none"></div>
-        <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none gap-2">
-          <span className="text-white text-xs sm:text-base flex items-center gap-2">
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+        <span className="w-auto mx-auto text-white text-xs sm:text-base flex items-center gap-2">
             Craft
             <span className="inline-block w-4 sm:w-8 h-0.5 bg-white opacity-70"></span>
             Envision
