@@ -103,7 +103,7 @@ const TextPressure = ({
           const italVal = italic ? getAttr(d, 0, 1).toFixed(2) : 0;
           const alphaVal = alpha ? getAttr(d, 0, 1).toFixed(2) : 1;
           span.style.opacity = alphaVal;
-          span.style.fontVariationSettings = `'wght' ${wght}, 'wdth' ${wdth}, 'ital' ${italVal}`;
+          span.style.fontVariationSettings = `'wght' ${wght}, 'wdth' ${wdth}, 'ital' ${italVal}, 'slnt' ${(-10 * italVal).toFixed(2)}`;
         });
       }
       rafId = requestAnimationFrame(animate);
@@ -125,11 +125,11 @@ const TextPressure = ({
       }}
     >
       <style>{`
-        @font-face {
+        ${fontUrl ? `@font-face {
           font-family: '${fontFamily}';
           src: url('${fontUrl}');
           font-style: normal;
-        }
+        }` : ''}
         .flex {
           display: flex;
           justify-content: space-between;

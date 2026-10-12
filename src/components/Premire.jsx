@@ -17,6 +17,8 @@ const Premire = () => {
         <div style={{ width: '100%', maxWidth: 1200, height: 180, position: 'relative', padding: '0 2rem' }}>
           <TextPressure
             text="Plume"
+            fontFamily="Roboto Flex"
+            fontUrl=""
             flex={true}
             alpha={false}
             stroke={false}
